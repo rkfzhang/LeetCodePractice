@@ -1,4 +1,4 @@
-#Solution
+# Solution
 ```
 def twoSum(self, nums: List[int], target: int) -> List[int]:
         
@@ -12,7 +12,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
 
         m[cur] = i;
 ```
-#Explanation
+# Explanation
 - Iterate through nums
 - check if the remaining (left - nums) has been seen
   - if yes, return indicies
