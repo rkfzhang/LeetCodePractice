@@ -1,4 +1,4 @@
-#Solution
+# Solution
 ```
 def isValid(self, s):
     if (len(s) % 2 == 1):
@@ -18,7 +18,7 @@ def isValid(self, s):
 
     return len(stack) == 0
 ```
-#Explanation
+# Explanation
 - Add elements to a stack
 - If it is a closing bracket, check the previous entry
   - Last entry must be matching oopenning bracket to be valid 
