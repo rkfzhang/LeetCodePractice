@@ -24,9 +24,10 @@ def find_string_anagrams(str1, pattern):
     
     if windowEnd >= len(pattern) -1:
       remove = str1[windowStart];
-      if charsAvail[remove] == 0:
-        toMatch += 1;
-      charsAvail[remove] += 1;
+      if remove in charsAvail:
+        if charsAvail[remove] == 0:
+          toMatch += 1;
+        charsAvail[remove] += 1;
       windowStart += 1;
 
       if windowStart + len(pattern) > len(str1):
